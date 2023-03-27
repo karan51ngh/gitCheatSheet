@@ -67,3 +67,4 @@ git pull origin
 ```
 git push origin
 ```
+- `git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
