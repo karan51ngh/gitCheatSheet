@@ -23,3 +23,24 @@ The three stages are: Working Directory, Staging Area, and Git Repository.
 Git tracks changes in your Working Directory and displays them as "unstaged changes".
 - Use `git add` to stage changes for the next commit.
 - Use `git commit` to permanently save changes to the Git Repository.
+
+## GIT CONFIGURATION
+The `git config` command is used to configure various settings and preferences for Git. This command can be used to set Git configuration at different levels, including system, global, and local.
+
+- Set user name and email: Git username and email are used to identify the author of a commit. Git uses the username and email associated with your Git configuration to record the author of the commit. Git hosting services (such as GitHub) may use your email address to verify your identity for security purposes.
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+- Set default text editor:
+```
+git config --global core.editor nano
+```
+- Check current configuration:
+```
+git config --list
+```
+- To edit your global Git configuration file:
+```
+git config --global --edit
+```
