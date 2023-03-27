@@ -8,8 +8,8 @@
 - **Branch**: A branch is a separate line of development within a repository. By default, there is a "master" branch, but developers can create new branches to work on new features or bug fixes without affecting the main codebase.
 - **Merging**: Merging is the process of taking the changes made in one branch and applying them to another branch.
 - **Clone**: Clone is the command used to copy a repository from a remote server to your local machine.
-- **Add & Commit**: The "add" command stages changes, and the "commit" command saves those changes with a message describing what was done.
-- **Push & Pull**: The "push" command uploads your commits to a remote repository, and the "pull" command downloads any new commits from the remote repository.
+- **Add & Commit**: The `add` command stages changes, and the `commit` command saves those changes with a message describing what was done.
+- **Push & Pull**: The `push` command uploads your commits to a remote repository, and the `pull` command downloads any new commits from the remote repository.
 
 
 ## THREE-STAGE  ARCHITECTURE OF GIT
@@ -21,5 +21,5 @@ The three stages are: Working Directory, Staging Area, and Git Repository.
 - The **Git Repository** is where Git permanently stores your files and the history of changes made to them. 
 
 Git tracks changes in your Working Directory and displays them as "unstaged changes".
-- Use git add to stage changes for the next commit.
-- Use git commit to permanently save changes to the Git Repository.
+- Use `git add` to stage changes for the next commit.
+- Use `git commit` to permanently save changes to the Git Repository.
