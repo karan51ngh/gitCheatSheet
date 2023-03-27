@@ -68,3 +68,39 @@ git pull origin
 git push origin
 ```
 - `git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
+
+## ORIGIN, REMOTE AND UPSTREAM
+
+- In Git, "origin" is a default name for the remote repository where the local repository was cloned from. When you clone a Git repository, the remote repository you clone from is automatically assigned the name "origin". 
+- You can use the name "origin" to refer to the remote repository when executing Git commands, such as pushing or pulling changes to and from the remote repository.
+- `git remote` is a command in Git that allows you to manage the connections to remote Git repositories. With this command, you can list, add, rename, and remove remote repositories.
+ - List all the remote repositories connected to your local repository:
+   ```
+   git remote -v
+   ```
+ - Add a new remote repository with the name <name>:
+   ```
+   git remote add <name> <remote_url>
+   ```
+ -  Rename a remote repository from <oldname> to <newname>.
+   ```
+   git remote rename <oldname> <newname>
+   ```
+ -  Display information about a specific remote repository, including it's branch mappings and the last time the remote repository was fetched.
+   ```
+   git remote show <name>
+   ```
+ - Remove the connection to a remote repository with the name <name> from your local Git repository.
+   ```
+   git remote remove <name>
+   ```
+- In Git, upstream refers to the original repository that a forked repository was created from. When you fork a repository on GitHub, the original repository is automatically added as a remote called "upstream".
+- You can use the upstream repository to synchronize your forked repository with any changes made to the original repository. This is done by fetching the changes from the upstream repository and merging them into your local repository.
+```
+git fetch upstream
+git merge upstream/<branch_name>
+```
+- To set the upstream repository for your local branch, you can use the following command:
+```
+git push --set-upstream <remote> <branch>
+```
