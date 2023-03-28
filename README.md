@@ -28,14 +28,18 @@ Git tracks changes in your Working Directory and displays them as "unstaged chan
 The Git file status lifecycle describes the different states a file can be in when it is being tracked by Git. There are four main states in the Git file status lifecycle:
 
 1. **Untracked**: A file is untracked when it is not yet being tracked by Git. Git is unaware of the file's existence.
-
 1. **Modified**: A file is considered modified when changes have been made to it since the last commit.
-
 1. **Staged**: A file is staged when it has been marked to be included in the next commit. The changes made to the file are included in the staging area.
-
 1. **Committed**: A file is committed when the changes made to it have been saved to the Git repository.
 
-`git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
+- `git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
+- `git add` is used to add changes to the staging area. The git add command can be used to add individual files, multiple files, or even entire directories to the staging area.
+ - `git add <filename>`: Stages the changes made to the specified file for the next commit.
+ - `git add .` or `git add --all`: Stages all changes made to tracked files in the current directory and its subdirectories. It also stages any new untracked files that have been added to the repository.
+- `git commit` is a command used in Git to record changes to the local repository. Once changes have been added to the staging area using `git add`, they can be commited. This creates a new snapshot of the repository at the current state, and this snapshot is saved in the Git history.
+ - `git commit`: If you enter `git commit` without any additional options, Git will open your default text editor and allow you to enter a commit message.
+ - `git commit -m "commit message"`: This variant allows you to specify the commit message directly on the command line.
+ - `git commit -a`: This variant automatically stages all modified and deleted files before creating the commit.
 
 ## GIT CONFIGURATION
 
