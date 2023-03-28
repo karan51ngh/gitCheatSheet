@@ -120,3 +120,15 @@ git merge upstream/<branch_name>
 ```
 git push --set-upstream <remote> <branch>
 ```
+
+## MISCELLANEOUS
+
+1. `git diff`:  Used to view the differences between the working directory and the staging area, or between the staging area and a previous commit.
+ - By default, `git diff` shows the changes that are not yet staged.
+ - use `--staged` or `--cached` for seeing the changes that have already been staged.
+ - use the `--color` option to highlight the changes with colors.
+1. `git rm`: Used to remove files from the Git repository. It removes the file from the working directory and stages the removal of the file in the next commit.
+ - `git rm <filename>`: Removes the file from the working directory and stages the removal of the file in the next commit.
+ - `git rm --cached <filename>`: Removes the file from the staging area, but not from the working directory.
+ - `git rm -r <directory>`: This removes a directory and its contents from the repository.
+1. `git mv`: Used to move or rename a file or a directory in your Git repository and stages the change automatically.
