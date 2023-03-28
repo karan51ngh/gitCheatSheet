@@ -11,7 +11,6 @@
 - **Add & Commit**: The `add` command stages changes, and the `commit` command saves those changes with a message describing what was done.
 - **Push & Pull**: The `push` command uploads your commits to a remote repository, and the `pull` command downloads any new commits from the remote repository.
 
-
 ## THREE-STAGE  ARCHITECTURE OF GIT
 
 Git has a three-stage architecture for managing changes to files in a repository.
@@ -23,6 +22,20 @@ The three stages are: Working Directory, Staging Area, and Git Repository.
 Git tracks changes in your Working Directory and displays them as "unstaged changes".
 - Use `git add` to stage changes for the next commit.
 - Use `git commit` to permanently save changes to the Git Repository.
+
+## GIT FILE STATUS LIFECYCLE
+
+The Git file status lifecycle describes the different states a file can be in when it is being tracked by Git. There are four main states in the Git file status lifecycle:
+
+1. **Untracked**: A file is untracked when it is not yet being tracked by Git. Git is unaware of the file's existence.
+
+1. **Modified**: A file is considered modified when changes have been made to it since the last commit.
+
+1. **Staged**: A file is staged when it has been marked to be included in the next commit. The changes made to the file are included in the staging area.
+
+1. **Committed**: A file is committed when the changes made to it have been saved to the Git repository.
+
+`git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
 
 ## GIT CONFIGURATION
 
@@ -67,7 +80,6 @@ git pull origin
 ```
 git push origin
 ```
-- `git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
 
 ## ORIGIN, REMOTE AND UPSTREAM
 
