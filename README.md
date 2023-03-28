@@ -33,13 +33,13 @@ The Git file status lifecycle describes the different states a file can be in wh
 1. **Committed**: A file is committed when the changes made to it have been saved to the Git repository.
 
 - `git status`: Shows the current status of your local repository. It displays information such as which branch you are currently on, which files have been modified or added, and which files are staged and ready to be committed. This command is useful to check the status of your changes before committing them.
-- `git add` is used to add changes to the staging area. The git add command can be used to add individual files, multiple files, or even entire directories to the staging area.
+- `git add` Used to add changes to the staging area. The git add command can be used to add individual files, multiple files, or even entire directories to the staging area.
  - `git add <filename>`: Stages the changes made to the specified file for the next commit.
  - `git add .` or `git add --all`: Stages all changes made to tracked files in the current directory and its subdirectories. It also stages any new untracked files that have been added to the repository.
-- `git commit` is a command used in Git to record changes to the local repository. Once changes have been added to the staging area using `git add`, they can be commited. This creates a new snapshot of the repository at the current state, and this snapshot is saved in the Git history.
+- `git commit` Used in Git to record changes to the local repository. Once changes have been added to the staging area using `git add`, they can be commited. This creates a new snapshot of the repository at the current state, and this snapshot is saved in the Git history.
  - `git commit`: If you enter `git commit` without any additional options, Git will open your default text editor and allow you to enter a commit message.
- - `git commit -m "commit message"`: This variant allows you to specify the commit message directly on the command line.
- - `git commit -a`: This variant automatically stages all modified and deleted files before creating the commit.
+ - `git commit -m "commit message"`: Allows you to specify the commit message directly on the command line.
+ - `git commit -a`: Automatically stages all modified and deleted files before creating the commit.
 
 ## GIT CONFIGURATION
 
@@ -89,7 +89,7 @@ git push origin
 
 - In Git, "origin" is a default name for the remote repository where the local repository was cloned from. When you clone a Git repository, the remote repository you clone from is automatically assigned the name "origin". 
 - You can use the name "origin" to refer to the remote repository when executing Git commands, such as pushing or pulling changes to and from the remote repository.
-- `git remote` is a command in Git that allows you to manage the connections to remote Git repositories. With this command, you can list, add, rename, and remove remote repositories.
+- `git remote` Allows you to manage the connections to remote Git repositories. With this command, you can list, add, rename, and remove remote repositories.
  - List all the remote repositories connected to your local repository:
    ```
    git remote -v
@@ -127,8 +127,45 @@ git push --set-upstream <remote> <branch>
  - By default, `git diff` shows the changes that are not yet staged.
  - use `--staged` or `--cached` for seeing the changes that have already been staged.
  - use the `--color` option to highlight the changes with colors.
-1. `git rm`: Used to remove files from the Git repository. It removes the file from the working directory and stages the removal of the file in the next commit.
+2. `git rm`: Used to remove files from the Git repository. It removes the file from the working directory and stages the removal of the file in the next commit.
  - `git rm <filename>`: Removes the file from the working directory and stages the removal of the file in the next commit.
  - `git rm --cached <filename>`: Removes the file from the staging area, but not from the working directory.
  - `git rm -r <directory>`: This removes a directory and its contents from the repository.
-1. `git mv`: Used to move or rename a file or a directory in your Git repository and stages the change automatically.
+3. `git mv`: Used to move or rename a file or a directory in your Git repository and stages the change automatically.
+
+## GIT BRANCHING
+
+Git branching is a feature that allows developers to work on different versions of a project simultaneously. You can create multiple branches, each with its own set of changes, and switch between them to work on different features or bug fixes. This helps to isolate changes and prevents conflicts between different parts of the project.
+
+- Create a new branch:
+```
+git branch <branch-name>
+```
+- Switch to an existing branch:
+```
+git checkout <branch-name>
+```
+- Create a new branch and switch to it:
+```
+git checkout -b <branch-name>
+```
+- List all branches:
+```
+git branch
+```
+- Merge a branch into the current branch:
+```
+git merge <branch-name>
+```
+- Delete a branch:
+```
+git branch -d <branch-name>
+```
+- Delete a branch (even if it has unmerged changes):
+```
+git branch -D <branch-name>
+```
+- Rename a branch:
+```
+git branch -m <old-branch-name> <new-branch-name>
+```
