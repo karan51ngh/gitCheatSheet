@@ -1,4 +1,4 @@
-# GIT CHEET SHEET
+# GIT CHEAT SHEET
 
 - [Basics Of Git](#basics-of-git)
 - [Three-Stage Architecture of Git](#three-stage-architecture-of-git)
