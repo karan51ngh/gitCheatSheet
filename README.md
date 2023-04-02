@@ -1,5 +1,15 @@
 # GIT CHEET SHEET
 
+- [Basics Of Git](#basics-of-git)
+- [Three-Stage Architecture of Git](#three-stage-architecture-of-git)
+- [Git File Status Lifecycle](#git-file-status-lifecycle)
+- [Git Configuration](#git-configuration)
+- [Managing Git Repositories](#managing-git-repositories)
+- [Origin, Remote and Upstream](#origin-remote-and-upstream)
+- [Git Branching](#git-branching)
+- [Miscellaneous](#miscellaneous)
+
+
 ## BASICS OF GIT
 
 - **Git** is a distributed version control system that allows developers to track changes in their code and collaborate on projects.
@@ -121,18 +131,6 @@ git merge upstream/<branch_name>
 git push --set-upstream <remote> <branch>
 ```
 
-## MISCELLANEOUS
-
-1. `git diff`:  Used to view the differences between the working directory and the staging area, or between the staging area and a previous commit.
- - By default, `git diff` shows the changes that are not yet staged.
- - use `--staged` or `--cached` for seeing the changes that have already been staged.
- - use the `--color` option to highlight the changes with colors.
-2. `git rm`: Used to remove files from the Git repository. It removes the file from the working directory and stages the removal of the file in the next commit.
- - `git rm <filename>`: Removes the file from the working directory and stages the removal of the file in the next commit.
- - `git rm --cached <filename>`: Removes the file from the staging area, but not from the working directory.
- - `git rm -r <directory>`: This removes a directory and its contents from the repository.
-3. `git mv`: Used to move or rename a file or a directory in your Git repository and stages the change automatically.
-
 ## GIT BRANCHING
 
 Git branching is a feature that allows developers to work on different versions of a project simultaneously. You can create multiple branches, each with its own set of changes, and switch between them to work on different features or bug fixes. This helps to isolate changes and prevents conflicts between different parts of the project.
@@ -169,3 +167,15 @@ git branch -D <branch-name>
 ```
 git branch -m <old-branch-name> <new-branch-name>
 ```
+
+## MISCELLANEOUS
+
+1. `git diff`:  Used to view the differences between the working directory and the staging area, or between the staging area and a previous commit.
+ - By default, `git diff` shows the changes that are not yet staged.
+ - use `--staged` or `--cached` for seeing the changes that have already been staged.
+ - use the `--color` option to highlight the changes with colors.
+2. `git rm`: Used to remove files from the Git repository. It removes the file from the working directory and stages the removal of the file in the next commit.
+ - `git rm <filename>`: Removes the file from the working directory and stages the removal of the file in the next commit.
+ - `git rm --cached <filename>`: Removes the file from the staging area, but not from the working directory.
+ - `git rm -r <directory>`: This removes a directory and its contents from the repository.
+3. `git mv`: Used to move or rename a file or a directory in your Git repository and stages the change automatically.
