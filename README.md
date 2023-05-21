@@ -71,8 +71,8 @@ The `git config` command is used to configure various settings and preferences f
 
 - Set user name and email: Git username and email are used to identify the author of a commit. Git uses the username and email associated with your Git configuration to record the author of the commit. Git hosting services (such as GitHub) may use your email address to verify your identity for security purposes.
 ```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
+git config --global user.name "karan51ngh"
+git config --global user.email "karansingh9535@gmail.com"
 ```
 - Set default text editor:
 ```
